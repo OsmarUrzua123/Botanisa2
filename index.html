@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f3e8">
+<title>La Botanisa | Antojitos y bebidas</title>
+<style>
+:root{--ink:#263322;--green:#395a35;--lime:#f4d34f;--yellow:#f4d34f;--cream:#fbf7ed;--coral:#ed775d;--muted:#6e7566;--card:#fffdf8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}
+.hero{position:relative;overflow:hidden;background:var(--green);color:#fff;padding:70px 22px 62px}
+.hero:after{content:'';position:absolute;right:8%;top:-80px;font-size:310px;color:#ffffff12;transform:rotate(-18deg)}
+.wrap{width:min(1080px,100% - 40px);margin:auto}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;font-weight:700;color:var(--lime)}
+h1{font-family:Georgia,serif;font-size:clamp(3rem,9vw,6rem);line-height:.95;margin:16px 0}
+.hero p{font-size:1.1rem;max-width:540px;color:#e8eedf;line-height:1.6}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.button{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:999px;text-decoration:none;font-weight:700;background:var(--lime);color:var(--ink);transition:transform .15s}
+.button:hover{transform:translateY(-2px)}
+.button.outline{background:transparent;color:white;border:1px solid #ffffff88}
+.intro{padding:48px 0 16px;text-align:center}
+.intro h2,.section-title{font:clamp(1.8rem,4vw,2.6rem) Georgia,serif;margin:0 0 8px}
+.intro p{color:var(--muted);margin:0}
+.menu-section{padding:34px 0}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:17px;border-bottom:1px solid #d9ddce;padding-bottom:12px}
+.section-head p{margin:0;color:var(--muted);font-size:.9rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:16px}
+.item{background:var(--card);border:1px solid #e9e5d8;border-radius:18px;overflow:hidden;box-shadow:0 5px 18px #2633220a}
+.photo{height:155px;background:linear-gradient(135deg,#fff0a8,#f4e8b7);display:flex;align-items:center;justify-content:center;color:#657252;text-align:center;font-size:.85rem;padding:16px;position:relative}
+.photo:before{content:'＋';display:grid;place-items:center;border:1px dashed #89946c;border-radius:50%;width:36px;height:36px;font-size:1.3rem;margin-right:9px;flex:none}
+.photo span{max-width:180px}
+.photo:has(img):before{display:none}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.item-info{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 15px}
+.item h3{font-size:1rem;margin:0}
+.price{color:var(--green);font-weight:800;white-space:nowrap}
+.price.unknown{font-size:.8rem;color:var(--muted);font-weight:600;white-space:normal;text-align:right}
+.location{margin:32px auto 60px;background:#f8e89f;border-radius:24px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.location h2{font:2rem Georgia,serif;margin:0 0 7px}
+.location p{margin:0;color:var(--muted)}
+.location .button{background:var(--green);color:white;white-space:nowrap}
+footer{text-align:center;background:#263322;color:#e8eedf;padding:25px}
+footer a{color:var(--lime)}
+footer p{margin:6px}
+@media(max-width:600px){
+  .hero{padding:52px 0}
+  .wrap{width:min(100% - 28px,1080px)}
+  .location{align-items:flex-start;flex-direction:column}
+  .section-head{align-items:flex-start;flex-direction:column;gap:5px}
+  .photo{height:145px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Antojitos · bebidas · mucho sabor</div>
+    <h1>La Botanisa</h1>
+    <p>Tu antojo favorito te espera. Elige algo rico, ven a visitarnos y disfruta.</p>
+    <div class="actions">
+      <a class="button" href="https://www.google.com/maps/place/Eloteria/@31.8986163,-116.5720447,19.6z/data=!4m6!3m5!1s0x80d88d005dfe79a7:0x619cfa0c9b75016a!8m2!3d31.8987373!4d-116.5721488!16s%2Fg%2F11n3mvgw1y?entry=ttu&amp;g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">📍 Cómo llegar</a>
+      <a class="button outline" href="https://www.instagram.com/la_botanisa_/" target="_blank" rel="noopener">◎ Instagram</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <h2>¿Qué se te antoja?</h2>
+    <p>Explora nuestro menú y encuentra tu favorito.</p>
+  </section>
+
+  <section class="menu-section">
+    <div class="section-head">
+      <h2 class="section-title">Bebidas</h2>
+      <p>Para acompañar tu antojo</p>
+    </div>
+    <div class="grid">
+      <article class="item">
+        <div class="photo"><img src="fotos/coca-cola.jpg" alt="Coca-Cola"></div>
+        <div class="item-info"><h3>Coca-Cola</h3><span class="price">$25</span></div>
+      </article>
+      <article class="item">
+        <div class="photo"><img src="fotos/Agua-Natural.jpg" alt="Agua natural"></div>
+        <div class="item-info"><h3>Agua natural</h3><span class="price">$10</span></div>
+      </article>
+      <article class="item">
+        <div class="photo"><img src="fotos/pau-pau.jpg" alt="Pau Pau"></div>
+        <div class="item-info"><h3>Pau Pau</h3><span class="price">$10</span></div>
+      </article>
+      <article class="item">
+        <div class="photo"><img src="fotos/capri-sun.jpg" alt="Capri-Sun"></div>
+        <div class="item-info"><h3>Capri-Sun</h3><span class="price">$15</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <div class="section-head">
+      <h2 class="section-title">Elotes</h2>
+      <p>Preparados para disfrutar</p>
+    </div>
+    <div class="grid">
+      <article class="item">
+        <div class="photo"><img src="fotos/Vaso.jpg" alt="Elote en vaso"></div>
+        <div class="item-info"><h3>Elote en vaso</h3><span class="price">$40, 50 y 80</span></div>
+      </article>
+      <article class="item">
+        <div class="photo"><img src="fotos/chalupa.jpg" alt="Chalupa"></div>
+        <div class="item-info"><h3>Chalupa</h3><span class="price">$35</span></div>
+      </article>
+      <article class="item">
+        <div class="photo"><img src="fotos/Revolcada.jpg" alt="Revolcada"></div>
+        <div class="item-info"><h3>Revolcada</h3><span class="price">$80</span></div>
+      </article>
+      <article class="item">
+        <div class="photo"><img src="fotos/Greñuda.jpg" alt="Greñuda"></div>
+        <div class="item-info"><h3>Greñuda</h3><span class="price">$130</span></div>
+      </article>
+      <article class="item">
+        <div class="photo"><img src="fotos/Desgreñada.jpg" alt="Desgreñada"></div>
+        <div class="item-info"><h3>Desgreñada</h3><span class="price">$150</span></div>
+      </article>
+      <article class="item">
+        <div class="photo"><img src="fotos/Tostielotes.jpg" alt="Tostielote"></div>
+        <div class="item-info"><h3>Tostielote</h3><span class="price">$80</span></div>
+      </article>
+      <article class="item">
+        <div class="photo"><img src="fotos/volcan.jpg" alt="Volcán"></div>
+        <div class="item-info"><h3>Volcán</h3><span class="price">$90</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <div class="section-head">
+      <h2 class="section-title">Fresas con crema</h2>
+      <p>Un toque dulce</p>
+    </div>
+    <div class="grid">
+      <article class="item">
+        <div class="photo"><img src="fotos/Fresas.jpg" alt="Vaso de fresas con crema"></div>
+        <div class="item-info"><h3>Vaso de fresas con crema</h3><span class="price">$80</span></div>
+      </article>
+      <article class="item">
+        <div class="photo"><img src="fotos/Diabetica.jpg" alt="Diabética"></div>
+        <div class="item-info"><h3>Diabética</h3><span class="price">$130</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <div class="section-head">
+      <h2 class="section-title">Antojitos</h2>
+      <p>Para compartir… o no</p>
+    </div>
+    <div class="grid">
+      <article class="item">
+        <div class="photo"><img src="fotos/Churroslocos.jpg" alt="Churros locos"></div>
+        <div class="item-info"><h3>Churros locos</h3><span class="price">$60 y 100</span></div>
+      </article>
+      <article class="item">
+        <div class="photo"><img src="fotos/Tostilocos.jpg" alt="Tostilocos"></div>
+        <div class="item-info"><h3>Tostilocos</h3><span class="price">$80</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="location">
+    <div>
+      <h2>Encuéntranos</h2>
+      <p>Consulta la ubicación y abre la ruta en Google Maps.</p>
+    </div>
+    <a class="button" href="https://www.google.com/maps/place/Eloteria/@31.8986163,-116.5720447,19.6z/data=!4m6!3m5!1s0x80d88d005dfe79a7:0x619cfa0c9b75016a!8m2!3d31.8987373!4d-116.5721488!16s%2Fg%2F11n3mvgw1y?entry=ttu&amp;g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Ver en Google Maps ↗</a>
+  </section>
+</main>
+
+<footer>
+  <p><strong>La Botanisa</strong></p>
+  <p>Síguenos en <a href="https://www.instagram.com/la_botanisa_/" target="_blank" rel="noopener">Instagram @la_botanisa_</a></p>
+</footer>
+
+</body>
+</html>
